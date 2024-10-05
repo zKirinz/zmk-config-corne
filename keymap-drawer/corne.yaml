@@ -26,7 +26,7 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: P, h: RGUI}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-caps$$
   - Z
   - X
@@ -39,7 +39,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '''', s: '"'}
+  - $$mdi:keyboard-esc$$
   - $$mdi:volume-off$$
   - fn
   - {t: '$$mdi:keyboard-tab$$', h: nav}
