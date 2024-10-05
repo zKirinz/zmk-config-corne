@@ -152,7 +152,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&trans @kp DLLR'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $
   - {t: '$$mdi:transfer$$', type: trans}
   - +
   - )
@@ -164,7 +165,8 @@ layers:
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - LSHIFT @kp AT
+  - $$mdi:apple-keyboard-shift$$
+  - '@'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '-', s: _}
   - (
@@ -176,7 +178,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&trans @kp HASH'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '#'
   - {t: '$$mdi:transfer$$', type: trans}
   - _
   - {t: '=', s: +}
@@ -189,10 +192,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   fn:
   - $$mdi:printer-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
