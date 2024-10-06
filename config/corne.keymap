@@ -49,7 +49,6 @@
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-	    retro-tap;
         };
 
 	hmwf: homerow_mods_weak_fingers {
