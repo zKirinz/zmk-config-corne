@@ -42,13 +42,6 @@
             delay-ms = <0>;                   // 10
         };
 
-        td0: td_ls_cl {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD0";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
-        };
-
         hmsf: homerow_mods_strong_fingers {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -98,7 +91,7 @@
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤    ├─────────────────┤    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp CAPS      &kp Z         &kp X         &kp C         &kp V         &kp B              &kp LEFT_ARROW         &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp ESC
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤    ├─────────────────┤    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-                                &kp C_MUTE    &mo FN        &mt LCRTL TAB &lt NUM SPACE      &kp RIGHT_ARROW        &lt NAV ENTER &lt SYM BSPC  &mo FN                            
+                                &kp C_MUTE    &mo FN        &mt LCTRL TAB &lt NUM SPACE      &kp RIGHT_ARROW        &lt NAV RET   &lt SYM BSPC  &mo FN                            
 //                            ╰─────────────┴─────────────┴─────────────┴─────────────╯    ├─────────────────┤    ╰─────────────┴─────────────┴─────────────╯                            
                                                                                              &mkp LCLK
 //                                                                                         ╰─────────────────╯
