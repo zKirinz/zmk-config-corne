@@ -22,8 +22,9 @@
 #define ___ &trans
 
 &lt {
-    tapping-term-ms = <300>;
-    quick-tap-ms = <300>;
+    tapping-term-ms = <200>;
+    quick-tap-ms = <200>;
+    flavor = "tap-preferred";
     retro-tap;
 };
 
@@ -48,13 +49,24 @@
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
-        hm: homerow_mods {
+        hmsf: homerow_mods_strong_fingers {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+	    retro-tap;
+        };
+
+	hmwf: homerow_mods_weak_fingers {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <300>;
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+	    retro-tap;
         };
     };
 
@@ -82,11 +94,11 @@
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮    ╭─────────────────╮    ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp ESC       &kp Q         &kp W         &kp E         &kp R         &kp T              &kp UP_ARROW           &kp Y         &kp U         &kp I         &kp O         &kp SEMI      &kp GRAVE
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤    ├─────────────────┤    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp LSHIFT    &hm LGUI A    &hm LALT S    &hm LCTRL D   &hm LSHFT F   &kp G              &kp DOWN_ARROW         &kp H         &hm RSHFT J   &hm RCTRL K   &hm LALT L    &hm RGUI P    &kp SQT
+    &kp LSHIFT    &hmwf LGUI A  &hmwf LALT S  &hmsf LCTRL D &hmsf LSHFT F &kp G              &kp DOWN_ARROW         &kp H         &hmsf RSHFT J &hmsf RCTRL K &hmwf LALT L  &hmwf RGUI P  &kp SQT
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤    ├─────────────────┤    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp CAPS      &kp Z         &kp X         &kp C         &kp V         &kp B              &kp LEFT_ARROW         &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp ESC
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤    ├─────────────────┤    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-                                &kp C_MUTE    &mo FN        &lt NAV TAB   &lt NUM SPACE      &kp RIGHT_ARROW        &lt SYM ENTER &lt NAV BSPC  &mo FN                            
+                                &kp C_MUTE    &mo FN        &mt LCRTL TAB &lt NUM SPACE      &kp RIGHT_ARROW        &lt NAV ENTER &lt SYM BSPC  &mo FN                            
 //                            ╰─────────────┴─────────────┴─────────────┴─────────────╯    ├─────────────────┤    ╰─────────────┴─────────────┴─────────────╯                            
                                                                                              &mkp LCLK
 //                                                                                         ╰─────────────────╯
