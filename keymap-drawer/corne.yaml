@@ -42,7 +42,7 @@ layers:
   - $$mdi:keyboard-esc$$
   - $$mdi:volume-off$$
   - fn
-  - {t: '$$mdi:keyboard-tab$$', h: LCRTL}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-space$$', h: num}
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:keyboard-return$$', h: nav}
