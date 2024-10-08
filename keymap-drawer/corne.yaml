@@ -45,7 +45,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-space$$', h: num}
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:keyboard-return$$', h: nav}
+  - nav
   - {t: '$$mdi:backspace$$', h: sym}
   - fn
   - $$mdi:mouse-left-click-outline$$
@@ -94,7 +94,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
