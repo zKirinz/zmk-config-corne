@@ -65,8 +65,8 @@
 	hmqh: homerow_mods_quick_hold {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <300>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
 	    retro-tap;
@@ -95,13 +95,13 @@
 
 	    bindings = <
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮    ╭─────────────────╮    ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp ESC       &kp Q         &kp W         &kp E         &kp R         &kp T              &kp UP_ARROW           &kp Y         &kp U         &kp I         &kp O         &kp SEMI      &kp GRAVE
+    &kp ESC       &kp Q         &kp W         &kp E         &kp R         &kp T              &mmv MOVE_UP           &kp Y         &kp U         &kp I         &kp O         &kp SEMI      &kp GRAVE
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤    ├─────────────────┤    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp LSHIFT    &hmqh LGUI A  &hmwf LALT S  &hmsf LCTRL D &hmsf LSHFT F &kp G              &kp DOWN_ARROW         &kp H         &hmsf RSHFT J &hmsf RCTRL K &hmwf LALT L  &hmwf RGUI P  &kp SQT
+    &kp LSHIFT    &hmqh LGUI A  &hmwf LALT S  &hmsf LCTRL D &hmsf LSHFT F &kp G              &mmv MOVE_DOWN         &kp H         &hmsf RSHFT J &hmsf RCTRL K &hmwf LALT L  &hmwf RGUI P  &kp SQT
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤    ├─────────────────┤    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp CAPS      &kp Z         &kp X         &kp C         &kp V         &kp B              &kp LEFT_ARROW         &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp ESC
+    &kp CAPS      &kp Z         &kp X         &kp C         &kp V         &kp B              &mmv MOVE_LEFT         &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp ESC
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤    ├─────────────────┤    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-                                &kp C_MUTE    &mo FN        &mt LCTRL TAB &lt NUM SPACE      &kp RIGHT_ARROW        &mo NAV       &lt SYM BSPC  &mo FN                            
+                                &kp C_MUTE    &mo FN        &mt LCTRL TAB &lt NUM SPACE      &mmv MOVE_RIGHT        &mo NAV       &lt SYM BSPC  &mo FN                            
 //                            ╰─────────────┴─────────────┴─────────────┴─────────────╯    ├─────────────────┤    ╰─────────────┴─────────────┴─────────────╯                            
                                                                                              &mkp LCLK
 //                                                                                         ╰─────────────────╯
