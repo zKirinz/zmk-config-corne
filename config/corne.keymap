@@ -127,19 +127,19 @@
 	combo_equal_greater {
             timeout-ms = <50>;
             key-positions = <34 36>;
-            bindings = <&eq_gt>
+            bindings = <&eq_gt>;
         };
 
 	combo_colon_qmark {
             timeout-ms = <50>;
             key-positions = <17 37>;
-            bindings = <&eq_gt>
+            bindings = <&eq_gt>;
         };
 
 	combo_smile {
             timeout-ms = <50>;
             key-positions = <8 17>;
-            bindings = <&sml>
+            bindings = <&sml>;
         };
     };
 
