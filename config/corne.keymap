@@ -95,20 +95,51 @@
                 , <&macro_tap &kp GT>
                 ;
         };
+
+	cl_qm: colon_qmark {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp COLON>
+                , <&macro_tap &kp QMARK>
+                ;
+        };
+
+	sml: smile {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp EQUAL>
+                , <&macro_tap &kp RPAR>
+		, <&macro_tap &kp RPAR>
+                ;
+        };
     };
 
    combos {
         compatible = "zmk,combos";
-        combo_hyphen_gt {
+        combo_hyphen_greater {
             timeout-ms = <50>;
-            key-positions = <18 33>;
+            key-positions = <20 36>;
             bindings = <&hp_gt>;
         };
 
-	combo_equal_gt {
+	combo_equal_greater {
             timeout-ms = <50>;
-            key-positions = <31 33>;
-            bindings = <&eq_gt>;
+            key-positions = <34 36>;
+            bindings = <&eq_gt>
+        };
+
+	combo_colon_qmark {
+            timeout-ms = <50>;
+            key-positions = <17 37>;
+            bindings = <&eq_gt>
+        };
+
+	combo_smile {
+            timeout-ms = <50>;
+            key-positions = <8 17>;
+            bindings = <&sml>
         };
     };
 
