@@ -61,6 +61,16 @@
             bindings = <&kp>, <&kp>;
 	    retro-tap;
         };
+
+	bsp: backspace {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <300>;
+            flavor = "hold-preferred";
+            bindings = <&mo>, <&kp>;
+	    retro-tap;
+        };
     };
 
     macros {
@@ -171,7 +181,7 @@
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤    ├─────────────────┤    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp CAPS      &kp Z         &kp X         &kp C         &kp V         &kp B              &mmv MOVE_LEFT         &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp ESC
 //╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤    ├─────────────────┤    ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
-                                &kp C_MUTE    &mo FN        &mt LCTRL TAB &lt NUM SPACE      &mmv MOVE_RIGHT        &mo NAV       &lt SYM BSPC  &mo FN                            
+                                &kp C_MUTE    &mo FN        &mt LCTRL TAB &lt NUM SPACE      &mmv MOVE_RIGHT        &mo NAV       &bsp SYM BSPC &mo FN                            
 //                            ╰─────────────┴─────────────┴─────────────┴─────────────╯    ├─────────────────┤    ╰─────────────┴─────────────┴─────────────╯                            
                                                                                              &mkp LCLK
 //                                                                                         ╰─────────────────╯
