@@ -129,25 +129,25 @@
    combos {
         compatible = "zmk,combos";
         combo_hyphen_greater {
-            timeout-ms = <50>;
-            key-positions = <20 36>;
+            timeout-ms = <70>;
+            key-positions = <20 35>;
             bindings = <&hp_gt>;
         };
 
 	combo_equal_greater {
-            timeout-ms = <50>;
+            timeout-ms = <70>;
             key-positions = <34 36>;
             bindings = <&eq_gt>;
         };
 
 	combo_colon_qmark {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             key-positions = <17 37>;
-            bindings = <&eq_gt>;
+            bindings = <&cl_qm>;
         };
 
 	combo_smile {
-            timeout-ms = <50>;
+            timeout-ms = <60>;
             key-positions = <8 17>;
             bindings = <&sml>;
         };
