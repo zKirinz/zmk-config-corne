@@ -48,7 +48,7 @@ layers:
   - nav
   - {t: '$$mdi:backspace$$', h: sym}
   - fn
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - $$mdi:mouse-left-click-outline$$
   num:
   - {t: '$$mdi:transfer$$', type: trans}
   - '%'
