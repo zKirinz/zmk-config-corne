@@ -75,7 +75,6 @@
             quick-tap-ms = <300>;
             flavor = "hold-preferred";
             bindings = <&mo>, <&kp>;
-	    retro-tap;
         };
     };
 
@@ -142,20 +141,20 @@
 
 	combo_equal_greater {
             timeout-ms = <70>;
-            key-positions = <34 36>;
+            key-positions = <18 36>;
             bindings = <&eq_gt>;
         };
 
 	combo_colon_qmark {
             timeout-ms = <80>;
-            key-positions = <17 37>;
+            key-positions = <18 37>;
             bindings = <&cl_qm>;
         };
 
 	combo_smile {
             timeout-ms = <60>;
-            key-positions = <8 17>;
-            bindings = <&sml>;
+            key-positions = <8 18>;
+            bindings = <&sml>
         };
     };
 
