@@ -154,7 +154,7 @@
 	combo_smile {
             timeout-ms = <60>;
             key-positions = <8 18>;
-            bindings = <&sml>
+            bindings = <&sml>;
         };
     };
 
