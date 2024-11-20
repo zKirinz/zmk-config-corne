@@ -2,11 +2,16 @@ manifest:
   remotes:
     - name: urob
       url-base: https://github.com/urob
+    - name: zkirinz                        
+      url-base: https://github.com/zKirinz  
   projects:
     - name: zmk
       remote: urob
       revision: main
       import: app/west.yml
+    - name: nice-view-mod   
+      remote: zkirinz                      
+      revision: main     
   self:
     path: config
 
